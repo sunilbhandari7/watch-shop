@@ -22,7 +22,7 @@
 ?>
 <div class="main">
     <form action="" method="post" class="order">
-        <fieldset>
+        <fieldset class="fieldset">
             <legend>Selected Watch</legend>
             <div class="selected-watch">
                 <div class="selected-watch-img">
@@ -46,7 +46,7 @@
                 </div>
             </div>
         </fieldset>
-        <fieldset class="user-details">
+        <fieldset class="user-details fieldset">
             <?php
             if (isset($custid)) {
                 $sql3 = "SELECT * FROM tbl_user WHERE id = $custid";

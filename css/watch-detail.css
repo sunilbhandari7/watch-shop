@@ -23,14 +23,15 @@
   }
   .detail-image img{
     width: 90%;
-
+    
   }
   
   .detail-desc {
     text-align: justify;
     margin-bottom: 1%;
-    padding-right: 250px;
+    
     width: 200px;
+   
 
   }
   .detail-price {
