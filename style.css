@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --black: #1B1722;
+    --white : #F0F0F0;
+    --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: linear;
+}
+
+html{
+    font-size: 62.5%;   
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+
+
+.header{
+    top: 0;right: 0;left: 0;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 1.4rem 7%;
+    z-index: 999;
+}
+
+.header .navbar a{
+    font-size: 2rem;
+    margin-right: 3rem;
+    color: var(black);
+    font-weight: bold;
+}
+.header .navbar a:hover{
+    border-bottom: .1rem solid var(--black);
+    padding-bottom: .4rem;
+    background-color: orange;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+}
+.header .icon i{
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .search{
+    .header .search {
+        background-color: red;
+        width: 50px;
+        height: 150px;
+        position: fixed;
+        display: block;
+    } 
+
+}
+.header .search input{
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    background-color: var(--white);
+    color: var(--black);
+    margin-right: 7%;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    box-shadow: var(--box-shadow);
+}
+.search{
+    display: flex;
+    padding: 5px;
+    cursor: pointer;
+}
+.search img{
+  
+   height: 27px;
+    vertical-align: top;
+    margin-left: -40px;
+   
+    margin-top: 2px;
+    
+}
+.header .search.active{
+    display: inline-block;
+}
+.add-to-cart{
+    cursor: pointer;
+    background-color: yellow;
+}
+add-to-cart:hover{
+    background-color: blue;
+}
+#menu-bar{
+    display: none;
+}
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/watchbackground.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    
+}
+.home .homeContent{
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 4rem;
+}
+.home .homeContent h2{
+    font-size: 7rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    line-height: 7rem;
+    color: var(--black);
+    text-shadow: var(--box-shadow);
+}
+.home .homeContent p{
+    font-size: 1.8rem;
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+
+.heading{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    color: var(--black);
+}
+
+
+.product-main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    text-align: center;
+    color: black;
+    margin-left: 40px;
+    height: 100%;
+    
+}
+.product-detail{
+    width: 85%;
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius:10px;
+    margin-top: 10px;
+}
+.category-info p{
+    margin-bottom: 10px;
+}
+.category-info{
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    
+}
+.category-img{
+height: 350px;
+width: 350px;
+border-radius: 50%;
+
+}
+.category-seemore{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 5px 8px;
+    border-radius:5px;
+}
+
+
+.footer {
+    background: url(images/backGround.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    
+}
+.footer .credit{
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    color: var(--black);
+    text-align: center;
+    height: 50px;
+    
+}
+
+@media (max-width:768px) {
+   
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 25rem;
+        background-color: var(--white);
+        height: 80vh;
+    }
+    .header .navbar.active{
+        right: 0;
+    }
+    .header .navbar a{
+        display: block;
+        font-size: 2rem;
+        color: black;
+        margin: 1.5rem;
+    }
+}

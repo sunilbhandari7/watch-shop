@@ -1,0 +1,58 @@
+.main{
+    background-color: rgb(219, 219, 219);
+  }
+  
+  .selected-watch {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 3%;
+  
+  }
+  .selected-watch-img {
+    width:25%;
+    margin-right: 20px;
+  }
+
+  .selected-image {
+    width: 100%;
+    border-radius: 3px;
+  
+   
+  }
+  .user-details{
+      padding: 5%;
+    
+  }
+  .order {
+    width: 50%;
+    margin: 0 auto;
+    
+  }
+  .input-responsive {
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  .order-label {
+    margin-bottom: 1%;
+    font-weight: bold;
+    
+  }
+  .btn {
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  .btn-primary {
+    background-color: #f64c08;
+    color: white;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  
