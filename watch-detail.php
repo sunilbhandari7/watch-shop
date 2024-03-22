@@ -39,8 +39,9 @@
           <h3 class="detail-price">Rs.<?php echo $price; ?></h3>
           <form method="post">
             
+          Quantity:
             <div class="detail-quantity">
-              Quantity:
+              
               <input type="number" name="qty" min="1" value="1" required>
             </div>
             <div class="detail-buy">
