@@ -14,6 +14,7 @@
   .star {
     display: flex;
     align-items: center;
+    
   }
   .star img {
     width: 100px;
@@ -29,13 +30,13 @@
   .detail-desc {
     text-align: justify;
     margin-bottom: 1%;
-    
-    width: 200px;
+    font-size: 13px;
+    width: 300px;
    
 
   }
   .detail-price {
-    font-size: medium;
+    font-size: large;
     color: rgb(111, 107, 107);
     padding-top: 20px;
     padding-bottom: 30px;

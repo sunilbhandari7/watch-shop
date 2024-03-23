@@ -97,8 +97,8 @@ html{
     cursor: pointer;
     background-color: yellow;
 }
-add-to-cart:hover{
-    background-color: blue;
+.add-to-cart:hover{
+    background-color: black
 }
 #menu-bar{
     display: none;
@@ -186,19 +186,18 @@ border-radius: 50%;
 
 
 .footer {
-    background: url(images/backGround.png) no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background-color:#90e0ef;
+   
     
     
 }
 .footer .credit{
     font-size: 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding-bottom: 2rem;
     color: var(--black);
     text-align: center;
-    height: 50px;
+    height: 30px;
     
 }
 
