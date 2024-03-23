@@ -23,8 +23,6 @@ html{
     scroll-behavior: smooth;
 }
 
-
-
 .header{
     top: 0;right: 0;left: 0;
     background-color: aqua;
@@ -45,8 +43,8 @@ html{
 .header .navbar a:hover{
     border-bottom: .1rem solid var(--black);
     padding-bottom: .4rem;
-    background-color: orange;
-    border-radius: 10px;
+    background-color: #219ebc;
+    border-radius: 20px;
     padding: 20px;
     color: white;
 }
@@ -110,6 +108,7 @@ add-to-cart:hover{
     display: flex;
     align-items: center;
     background: url(images/watchbackground.jpg) no-repeat;
+    margin-top: 25px;
     background-size: cover;
     background-position: center center;
     
