@@ -117,7 +117,7 @@
 
                     //b. upload the selected image
                     $src = $_FILES['image']['tmp_name'];
-                    $dst = "/images/watch/" . $image_name;
+                    $dst = "../images/watch/" . $image_name;
                     $upload = move_uploaded_file($src, $dst);
                     //check whether the image is uploaded successfully or not
                     if ($upload == false) {

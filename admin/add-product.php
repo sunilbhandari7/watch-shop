@@ -81,7 +81,7 @@ include('partials/menu.php');
                     $image_name = "Watch_product_" . rand(000, 999) . '.' . $ext;
 
                     $source_path = $_FILES['image']['tmp_name'];
-                    $destination_path = "/images/category/" . $image_name;
+                    $destination_path = "../images/category/" . $image_name;
                     //upload image
                     $upload = move_uploaded_file($source_path, $destination_path);
                     if ($upload == false) {

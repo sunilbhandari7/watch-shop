@@ -7,7 +7,7 @@ if (isset($_GET['id']) and isset($_GET['image_name'])) {
     $image_name = $_GET['image_name'];
     //check image name AVAILAVLE DELETING if available
     if ($image_name != '') {
-        $path = "/images/watch/" . $image_name;
+        $path = "../images/watch/" . $image_name;
         //remove image from folder
         $remove = unlink($path);
         if ($remove == false) {

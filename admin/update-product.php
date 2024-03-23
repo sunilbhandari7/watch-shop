@@ -28,7 +28,7 @@
                         $image_name = "Watch_product_" . rand(000, 999) . '.' . $ext;
 
                         $source_path = $_FILES['image']['tmp_name'];
-                        $destination_path = "images/category/" . $image_name;
+                        $destination_path = "../images/category/" . $image_name;
                         //upload image
                         $upload = move_uploaded_file($source_path, $destination_path);
                         if ($upload == false) {
@@ -38,7 +38,7 @@
                         }
                         //section B
                         if ($current_image != '') {
-                            $remove_path = "images/category/" . $current_image;
+                            $remove_path = "../images/category/" . $current_image;
                             $remove = unlink($remove_path);
                             if ($remove  == false) {
                                 //failed to remove image
@@ -74,7 +74,7 @@
                         if ($current_image != "") {
                             //display the current image
                         ?>
-                            <img src="<?php echo SITEURL; ?>images/category/<?php echo $current_image; ?>" width="150px" alt="">
+                            <img src="<?php echo SITEURL; ?>../images/category/<?php echo $current_image; ?>" width="150px" alt="">
                         <?php
                         } else {
                             //display the message

@@ -46,7 +46,7 @@ if (isset($_GET['id'])) {
                         } else {
                             //img available
                         ?>
-                            <img src="<?php echo SITEURL; ?>images/watch/<?php echo $current_image; ?>" width="150px" alt="">
+                            <img src="<?php echo SITEURL; ?>/images/watch/<?php echo $current_image; ?>" width="150px" alt="">
                         <?php
                         }
                         ?>
