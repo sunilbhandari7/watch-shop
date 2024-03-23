@@ -3,7 +3,7 @@
 
 
 <div class="wallpaper">
-    <img class="wallpaper-img" src="images/asd.jpg" alt="" width="100%" height="30%" />
+    <img class="wallpaper-img" src="" alt="" " />
     <div class="sologon">
         <?php
         $search = isset($_POST['search']) ? mysqli_real_escape_string($con, $_POST['search']) : '';
