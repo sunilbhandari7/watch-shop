@@ -25,7 +25,7 @@
 
         <nav class="navbar">
             <a href="index.php">Home</a>
-            <a href="#ourproduct">Our Product</a>
+            <a href="our-product.php">Our Product</a>
             <a href="user-signup.php">Sign Up</a>
             <a href="user-login.php">Log In</a>
             <a href="contact-us.php">Contact Us</a>
@@ -34,7 +34,7 @@
         <form class="search" action="<?php echo SITEURL; ?>watch-search.php" method="POST">
         <div class="search">
 
-            <input width="20px" height="20px" type="text" name="search" id="searchBar" placeholder="Search for watch">
+            <input width="20px" height="20px" type="text" name="search" id="searchBar" placeholder="Search for Watch">
             <img src="images/searchicon.png" alt="">
         </div>
 </form>

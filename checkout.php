@@ -46,11 +46,11 @@
                         
                        
                            $checkout_query = "INSERT INTO tbl_buy SET
-                          furniture='$product_name',
+                          watch='$product_name',
                           price=$price,
                           qty=$db_pro_qty,
                           total=$single_pro_total_price,
-                          order_date='$order_date',
+                          buy_date='$buy_date',
                           status='$status',
                           customer_name='$customer_name',
                           customer_contact='$number',

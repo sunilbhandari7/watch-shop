@@ -95,7 +95,7 @@ html{
 }
 .add-to-cart{
     cursor: pointer;
-    background-color: yellow;
+    background-color: red;
 }
 .add-to-cart:hover{
     background-color: black
