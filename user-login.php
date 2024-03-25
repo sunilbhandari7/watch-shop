@@ -16,7 +16,7 @@
     <div class="main">
         <div class="wrapper">
             <form action="" method="post">
-                <h1>Login Form</h1>
+                <h1>login</h1>
                 <br>
                 <?php
                 if (isset($_SESSION['login'])) {
@@ -26,6 +26,10 @@
                 if (isset($_SESSION['no-login-message'])) {
                     echo $_SESSION['no-login-message'];
                     unset($_SESSION['no-login-message']);
+                }
+                if (isset($_SESSION['username'])) {
+                    echo $_SESSION['username'];
+                    unset($_SESSION['username']);
                 }
                 ?>
                 <div class="input-box">
@@ -68,6 +72,7 @@ if (isset($_POST['submit'])) {
             // Fetch user data
             $row = mysqli_fetch_assoc($res);
             $user_id = $row['id'];
+            
             $customer_email=$row['email'] ;
             $customer_add=$row['address'];
             $customer_number=$row['phone'];// Assuming 'id' is the column name for the user ID in your table
@@ -75,6 +80,7 @@ if (isset($_POST['submit'])) {
             // Set session variables
             $_SESSION['login'] = "<div class='success'>Login Successfully</div>";
             $_SESSION['username'] = $username;
+            echo $_SESSION['username'] ;
             $_SESSION['id'] = $user_id; 
               $_SESSION['email']=$customer_email; 
              $_SESSION['add']=$customer_add;
@@ -82,7 +88,7 @@ if (isset($_POST['submit'])) {
              $_SESSION['number']= $customer_number;
 
             // Redirect to the appropriate page
-            header("Location:" . SITEURL . "index.php");
+            header("Location:" . SITEURL . "customer/index.php");
             exit(); // Exit after redirection
         } else {
             // Session message

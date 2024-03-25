@@ -14,6 +14,25 @@
     <link rel="stylesheet" href="unisex.css">
     <link rel="stylesheet" href="css/watch-detail.css">
 </head>
+<?php
+// Assuming $con is your database connection
+if (isset($_SESSION['username'])) {
+    $cust_id = $_SESSION['id'];
+    $query = "SELECT * FROM cart WHERE user_id=$cust_id";
+    $run = mysqli_query($con, $query);
+
+    if ($run) {
+        $count = mysqli_num_rows($run);
+    } else {
+        // Handle query execution failure
+        echo "Error: " . mysqli_error($con);
+        $count = 0;
+    }
+} else {
+    $count = 0;
+}
+?>
+
 
 <body>
     <header class="header">
@@ -26,10 +45,25 @@
         <nav class="navbar">
             <a href="index.php">Home</a>
             <a href="our-product.php">Our Product</a>
-            <a href="user-signup.php">Sign Up</a>
-            <a href="user-login.php">Log In</a>
             <a href="contact-us.php">Contact Us</a>
             <a href="about-us.php">About Us</a>
+            <?php if (!isset($_SESSION['username'])) {
+
+
+?>
+            <a href="user-signup.php">Sign Up</a>
+            <a href="user-login.php">Log In</a>
+            <?php
+            }
+
+            if (isset($_SESSION['username'])) {
+
+
+            ?>
+                <a href="<?php echo SITEURL; ?>customer/index.php">Account</a>
+            <?php }
+            ?>
+            
         </nav>
         <form class="search" action="<?php echo SITEURL; ?>watch-search.php" method="POST">
         <div class="search">
