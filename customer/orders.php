@@ -8,7 +8,7 @@ if (!isset($_SESSION['username'])) {
 ?>
 
 <div class="account-info">
-  Order information
+  Order Information
 </div>
 
 <div class="user-information">
@@ -21,7 +21,7 @@ if (!isset($_SESSION['username'])) {
     $customer_id = $_SESSION['id'];
 
 
-    $order_query = "SELECT * FROM tbl_buy WHERE customer_id = $customer_id";
+    $order_query = "SELECT * FROM tbl_buy WHERE id = $customer_id";
 
     $run = mysqli_query($con, $order_query);
 
@@ -44,7 +44,7 @@ if (!isset($_SESSION['username'])) {
 
         <?php
         while ($order_row = mysqli_fetch_array($run)) {
-          $order_pro_id  = $order_row['product_id'];
+          $order_pro_id  = $order_row['id'];
           $order_qty     = $order_row['qty'];
           $order_amount  = $order_row['total'];
           $buy_date    = $order_row['buy_date'];

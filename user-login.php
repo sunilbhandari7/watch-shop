@@ -80,7 +80,7 @@ if (isset($_POST['submit'])) {
             // Set session variables
             $_SESSION['login'] = "<div class='success'>Login Successfully</div>";
             $_SESSION['username'] = $username;
-            echo $_SESSION['username'] ;
+            
             $_SESSION['id'] = $user_id; 
               $_SESSION['email']=$customer_email; 
              $_SESSION['add']=$customer_add;
