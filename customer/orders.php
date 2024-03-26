@@ -21,7 +21,7 @@ if (!isset($_SESSION['username'])) {
     $customer_id = $_SESSION['id'];
 
 
-    $order_query = "SELECT * FROM tbl_order WHERE customer_id = $customer_id";
+    $order_query = "SELECT * FROM tbl_buy WHERE customer_id = $customer_id";
 
     $run = mysqli_query($con, $order_query);
 
