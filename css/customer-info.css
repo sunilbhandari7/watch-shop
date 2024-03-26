@@ -28,6 +28,7 @@
     margin-right: 50px;
   height: 50%;
     width: 42%;
+    
   }
 
   .user-nav div {
@@ -38,14 +39,14 @@
   .user-link {
     text-decoration: none;
 
-    color: #0c93e7;
+    color: #00bbf9;
     font-size: 17px;
     vertical-align: top;
   }
 
   .user-link:hover {
-    text-decoration: underline;
-    color: #052f48;
+   
+    color: #f79256;
 
   }
 
@@ -63,6 +64,7 @@
   .user-detail-info p {
     width: 80%;
     text-align: justify;
+    font-size: 14px;
   }
   .order-table {
     border-collapse: collapse;
