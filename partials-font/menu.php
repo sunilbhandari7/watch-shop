@@ -72,7 +72,10 @@ if (isset($_SESSION['username'])) {
             <img src="images/searchicon.png" alt="">
         </div>
 </form>
+<a href="cart.php" class="">
         <div class="add-to-cart" > <img width="30px" height="30px" src ="images/addtocart.png"> </div>
+        <span><?php echo $count; ?></span>
+            </a>
  
     </header>
    

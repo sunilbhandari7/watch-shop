@@ -1,6 +1,6 @@
 <?php include('config/constants.php'); ?>
 <?php include('partials-font/menu.php'); ?>
-<link rel="stylesheet" href="CSS/cart.css">
+<link rel="stylesheet" href="css/cart.css">
 
 <!-- <div class="jumbotron b">
   <h2 class="text-center mt-5">Cart</h2>

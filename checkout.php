@@ -1,5 +1,6 @@
 <?php include('config/constants.php') ?>
 <?php include('partials-font/menu.php') ?>
+<link rel="stylesheet" href="css/checkout.css">
 
 <?php  
    if(isset($_SESSION['id'])){
@@ -50,7 +51,7 @@
                           price=$price,
                           qty=$db_pro_qty,
                           total=$single_pro_total_price,
-                          buy_date='$buy_date',
+                          order_date='$order_date',
                           status='$status',
                           customer_name='$customer_name',
                           customer_contact='$number',

@@ -55,12 +55,7 @@ if (isset($_SESSION['username'])) {
     </section>
         <div class="heading">
             <h2>Shop By Category</h2>
-            <?php 
-if (isset($_SESSION['order'])) {
-   echo $_SESSION['order'];
-   unset($_SESSION['order']);
-}
-?>
+           
         </div>
         <div class="product-main">
         <?php

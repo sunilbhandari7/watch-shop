@@ -1,6 +1,48 @@
-<?php include('config/constants.php'); ?>
-<?php include('partials-font/menu.php'); ?>
- <div class="main-detail">
+<?php
+include('config/constants.php');
+include('partials-font/menu.php');
+
+
+if (isset($_SESSION['username'])) {
+  if (isset($_SESSION['id'])) {
+    $custid = $_SESSION['id'];
+
+    if (isset($_GET['cart_id'])) {
+      $p_id = $_GET['cart_id'];
+
+      $sel_cart = "SELECT * FROM cart WHERE user_id = $custid AND product_id = $p_id";
+      $run_cart = mysqli_query($con, $sel_cart);
+
+      if ($run_cart) {
+        if (mysqli_num_rows($run_cart) == 0) {
+          $cart_query = "INSERT INTO `cart`(`user_id`, `product_id`,quantity) VALUES ($custid,$p_id,1)";
+          if (mysqli_query($con, $cart_query)) {
+            header('location:watch-detail.php');
+            exit; // Exit after redirection
+          }
+        } else {
+          while ($row = mysqli_fetch_array($run_cart)) {
+            $exist_pro_id = $row['product_id'];
+            if ($p_id == $exist_pro_id) {
+              $error = "<script> alert('⚠️ This product is already in your cart  ');</script>";
+            }
+          }
+        }
+      } else {
+        // Handle query execution failure
+        echo "Error executing query: " . mysqli_error($con);
+      }
+    }
+  } else {
+    // Handle 'id' session variable not being set
+    echo "Warning: 'id' session variable is not set";
+  }
+} else {
+  echo "<script> function a(){alert('⚠️ Login is required to add this product into cart');}</script>";
+}
+?>
+
+<div class="main-detail">
   <?php
   if (isset($_GET['image_id'])) {
     $image_id = $_GET['image_id'];
@@ -33,15 +75,39 @@
             <img src="images/star.png" alt="" />
             <span>(0 reviews)</span>
           </div>
-          <p class="detail-desc">
+          <p class="detail-description">
             <?php echo $description; ?>
           </p>
           <h3 class="detail-price">Rs.<?php echo $price; ?></h3>
           <form method="post">
-            
-          Quantity:
+            <?php
+            if (isset($_SESSION['username'])) {
+              $custid = $_SESSION['id'];
+              if (isset($_POST['submit'])) {
+                $qty = $_POST['qty'];
+                $sel_cart = "SELECT * FROM cart WHERE user_id = $custid and product_id = $id ";
+                $run_cart = mysqli_query($con, $sel_cart);
+
+                if ($run_cart === false) {
+                  echo "Error: " . mysqli_error($con);
+                } else {
+                  if (mysqli_num_rows($run_cart) == 0) {
+                    $cart_query = "INSERT INTO `cart`(`user_id`, `product_id`,quantity) VALUES ($custid,$id,$qty)";
+                    if (mysqli_query($con, $cart_query)) {
+                      header("location:watch-detail.php?image_id=$id");
+                    }
+                  } else {
+                    echo "<script>alert('⚠️ This product is already in your cart '); </script>";
+                  }
+                }
+              }
+            } else if (!isset($_SESSION['username'])) {
+              echo "<script> function a(){alert('⚠️ Login is required to add this product into cart');}</script>";
+            }
+            ?>
+
             <div class="detail-quantity">
-              
+              Quantity:
               <input type="number" name="qty" min="1" value="1" required>
             </div>
             <div class="detail-buy">
@@ -63,8 +129,8 @@
   ?>
 </div>
 
-<h4 class='recommended-title'>Recommended For You:</h4>
-<div class="mens-type">
+<h3 class='recommended-title'>Recommended for you:</h3>
+<div class="chair-type">
   <?php
 
   if (isset($image_id)) {
@@ -98,8 +164,8 @@
             <div class="mens-description">
               <p class="mens-name"><?php echo $title; ?></p>
               <p class="mens-price">Rs.<?php echo $price; ?></p>
-              <a href="<?php echo SITEURL;  ?>order.php?watch_id=<?php echo $id; ?>" class="buy" onclick="a()">Buy</a>
-              <a href="watch-detail.php?cart_id=<?php echo $id; ?>" class="add-to-cart" onclick="a()">Add to cart</a>
+              <a href="<?php echo SITEURL;  ?>order.php?watch_id=<?php echo $id; ?>" class="buy" onclick="a()">buy</a>
+              <a href="watch-detail.php?cart_id=<?php echo $id; ?>" class="add-to-cart" onclick="a()">add to cart</a>
             </div>
           </div>
   <?php
