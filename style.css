@@ -98,7 +98,7 @@ html{
     background-color: red;
 }
 .add-to-cart:hover{
-    background-color: black
+    background-color: black;
 }
 #menu-bar{
     display: none;

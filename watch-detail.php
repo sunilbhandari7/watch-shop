@@ -105,9 +105,9 @@ if (isset($_SESSION['username'])) {
               echo "<script> function a(){alert('⚠️ Login is required to add this product into cart');}</script>";
             }
             ?>
-
+           Quantity:
             <div class="detail-quantity">
-              Quantity:
+             
               <input type="number" name="qty" min="1" value="1" required>
             </div>
             <div class="detail-buy">
@@ -130,7 +130,7 @@ if (isset($_SESSION['username'])) {
 </div>
 
 <h3 class='recommended-title'>Recommended for you:</h3>
-<div class="chair-type">
+<div class="mens-type">
   <?php
 
   if (isset($image_id)) {

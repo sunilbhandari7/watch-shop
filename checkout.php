@@ -51,7 +51,7 @@
                           price=$price,
                           qty=$db_pro_qty,
                           total=$single_pro_total_price,
-                          order_date='$order_date',
+                          order_date='$order _date',
                           status='$status',
                           customer_name='$customer_name',
                           customer_contact='$number',
