@@ -40,7 +40,7 @@ if (isset($_SESSION['username'])) {
 
 <div class="main">
     <form action="" method="post" class="order">
-        <fieldset>
+        <fieldset class="sunil1">
             <legend>Selected Watch</legend>
             <div class="selected-watch">
                 <div class="selected-watch-img">
@@ -70,7 +70,7 @@ if (isset($_SESSION['username'])) {
                 </div>
             </div>
         </fieldset>
-        <fieldset class="user-details">
+        <fieldset class="user-details sunil1">
             <?php
             $sql3 = "SELECT * FROM tbl_user WHERE id = $custid";
             $res3 = mysqli_query($con, $sql3);

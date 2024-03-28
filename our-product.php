@@ -1,6 +1,6 @@
 <?php include('config/constants.php'); ?>
 <?php include('partials-font/menu.php'); ?>
-<div class="product-main">
+<div class="product-main sunil" >
         <?php
   $sql = "SELECT * FROM tbl_product WHERE active='Yes' AND featured='Yes' ";
   $res = mysqli_query($con, $sql);

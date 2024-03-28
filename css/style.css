@@ -16,6 +16,7 @@
     transition: linear;
 }
 
+
 html{
     font-size: 62.5%;   
     overflow-x: hidden;
@@ -107,7 +108,7 @@ html{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(images/watchbackground.jpg) no-repeat;
+    background: url(../images/watchbackground.jpg) no-repeat;
     margin-top: 25px;
     background-size: cover;
     background-position: center center;
@@ -140,6 +141,10 @@ html{
     font-size: 2.6rem;
     margin-bottom: 3rem;
     color: var(--black);
+    
+}
+.sologon{
+    padding-top: 100px;
 }
 
 
@@ -152,6 +157,9 @@ html{
     margin-left: 40px;
     height: 100%;
     
+}
+.sunil{
+    margin-top: 100px;
 }
 .product-detail{
     width: 85%;
