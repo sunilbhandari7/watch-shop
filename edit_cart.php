@@ -115,7 +115,7 @@ if (isset($_SESSION['id'])) {
 
             <!--order Detail-->
             <div class="order-detail">
-                <h1 class="order-detail-title">Order Detail</h1>
+                <h1 class="order-detail-title">Order Details</h1>
                 <p>Subtotal:Rs.<?php echo $sub_total; ?></p>
                 <p>Discount:Rs0</p>
                 <p>Shipping:Rs.<?php echo $shipping_cost; ?></p>

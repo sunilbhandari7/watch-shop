@@ -39,19 +39,19 @@ body{
     color: white;
   }
   .buy:hover {
-    background-color: darkorange;
+    background-color: #48cae4;
   }
   .add-to-cart {
     border: none;
     padding: 5px 8px;
     border-radius: 3px;
     margin-left: 5px;
-    background-color: crimson;
+    background-color: #f77f00;
     cursor: pointer;
     color: white;
   }
   .add-to-cart:hover {
-    background-color: blue;
+    background-color: #fcbf49;
   }
   .ladies-description p {
     margin-left: 13px;

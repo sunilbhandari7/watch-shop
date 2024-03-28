@@ -87,7 +87,7 @@ if (isset($_SESSION['username'])) {
 
   <!-- Order Detail -->
   <div class="order-detail">
-    <h1 class="order-detail-title">Order Detail</h1>
+    <h1 class="order-detail-title">Order Details</h1>
     <p>Subtotal:<?php echo $sub_total; ?></p>
     <p>Discount:Rs0</p>
     <p>Shipping:<?php echo $shipping_cost; ?></p>
@@ -97,7 +97,7 @@ if (isset($_SESSION['username'])) {
   <!-- End order -->
 </div>
 
-<div class="cart-button">
+<div class="cart-button descrip">
   <a href="watch-items.php"><button>Continue Shopping</button></a>
   <a href="checkout.php"><button>Proceed Checkout</button></a>
 </div>

@@ -10,6 +10,10 @@
     text-align : center;
     
     }
+    .cart-item h1{
+        padding-top: 30px;
+
+    }
     .cart-title {
     border-collapse : collapse;
     }
@@ -29,11 +33,12 @@
     }
     .order-detail p {
     margin-top : 1rem;
-    
+   
    
     }
     .order-detail-title {
     border-bottom : .1rem solid rgb(196, 194, 194);
+    
     }
     h3 {
     border-top : .1rem solid rgb(196, 194, 194);
@@ -87,3 +92,4 @@
     border-radius : .3rem;
     cursor : pointer;
     }
+    
