@@ -12,7 +12,7 @@ if (!isset($_SESSION['username'])) {
 
 <div class="account-info">
 
-  Account information
+  User Account information
 
 </div>
 <div class="user-information">

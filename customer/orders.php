@@ -8,7 +8,7 @@ if (!isset($_SESSION['username'])) {
 ?>
 
 <div class="account-info">
-  Order Information
+ User Order Information
 </div>
 
 <div class="user-information">

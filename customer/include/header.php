@@ -58,7 +58,7 @@ if (isset($_SESSION['username'])) {
 
 ?>
 
-  <a href="<?php echo SITEURL; ?>customer/index.php">Account</a>
+  <a href="<?php echo SITEURL; ?>customer/index.php">User Account</a>
 <?php }
 ?>
         </nav>
