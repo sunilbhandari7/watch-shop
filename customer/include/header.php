@@ -29,11 +29,11 @@ if (isset($_SESSION['username'])) {
     <title>Watch Shop - Homepage</title>
 
    
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../mens.css">
-    <link rel="stylesheet" href="../ladies.css">
-    <link rel="stylesheet" href="../unisex.css">
-    <link rel="stylesheet" href="css/watch-detail.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mens.css">
+    <link rel="stylesheet" href="../css/ladies.css">
+    <link rel="stylesheet" href="../css/unisex.css">
+    <link rel="stylesheet" href="../css/watch-detail.css">
     <link rel="stylesheet" href="../css/customer-info.css">
 </head>
 
