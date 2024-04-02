@@ -37,7 +37,7 @@
                     $price = $row['price'];
                     $qty = $row['qty'];
                     $total = $row['total'];
-                    $buy_date = $row['buy_date'];
+                    $order_date = $row['order_date'];
                     $status = $row['status'];
                     $customer_name = $row['customer_name'];
                     $customer_contact = $row['customer_contact'];
@@ -50,7 +50,7 @@
                         <td><?php echo $price; ?></td>
                         <td><?php echo $qty; ?></td>
                         <td><?php echo $total; ?></td>
-                        <td><?php echo $buy_date; ?></td>
+                        <td><?php echo $order_date; ?></td>
                         <td>
                             <?php
                             if ($status == 'Ordered') {

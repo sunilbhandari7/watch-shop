@@ -1,3 +1,5 @@
+<?php include('config/constants.php'); ?>
+<?php include ('partials-font/menu.php')?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,3 +37,4 @@
     </footer>
 </body>
 </html>
+<?php include ('partials-font/menu.php')?>

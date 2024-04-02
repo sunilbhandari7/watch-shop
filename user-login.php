@@ -8,6 +8,7 @@
     <title>Document</title>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/login.css" />
+    
 
 
 </head>
@@ -16,7 +17,7 @@
     <div class="main">
         <div class="wrapper">
             <form action="" method="post">
-                <h1>login</h1>
+                <h1>Login</h1>
                 <br>
                 <?php
                 if (isset($_SESSION['login'])) {
