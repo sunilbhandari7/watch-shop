@@ -65,7 +65,7 @@ if (isset($_POST['submit'])) {
             header("Location:" . SITEURL . "admin/");
         } else {
             //session message
-            $_SESSION['login'] = "<div class='error'>User name or password did't match.</div>";
+            $_SESSION['login'] = "<div class='error'>User name or password didn't match.</div>";
             header("Location:" . SITEURL . "admin/login.php");
         }
     }

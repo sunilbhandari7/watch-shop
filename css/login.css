@@ -11,14 +11,14 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url("../images/asd.jpg") no-repeat;
+  background: url("../images/backa.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   
 }
 .wrapper {
   width: 420px;
-  background:#d4a373;
+  background:#ffe0b5;
   border: 2px solid rgba(202, 201, 199, 0.6);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   color: black;
