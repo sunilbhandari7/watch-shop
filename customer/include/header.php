@@ -40,9 +40,9 @@ if (isset($_SESSION['username'])) {
 
 <body>
     <header class="header">
-        <div class="logoContent">
-            <a href="#" class="logo"><img src="" alt=""></a>
-            <h1 class="logoName">Watch Shop </h1>
+    <div class="logoContent">
+            <a href="#" class="logo"><img src="../images/logoo.png " height= 50px width=80px alt=""></a>
+            <h1 class="logoName"> </h1>
         
         </div>
 
@@ -62,12 +62,14 @@ if (isset($_SESSION['username'])) {
 <?php }
 ?>
         </nav>
+        
         <form class="search" action="<?php echo SITEURL; ?>watch-search.php" method="POST">
         <div class="search">
 
             <input width="20px" height="20px" type="text" name="search" id="searchBar" placeholder="Search for Watch">
             <img src="../images/searchicon.png" alt="">
         </div>
+        
         
 </form>
 <a href="../cart.php" class="">

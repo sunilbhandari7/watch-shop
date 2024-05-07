@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/ladies.css">
     <link rel="stylesheet" href="css/unisex.css">
     <link rel="stylesheet" href="css/watch-detail.css">
+    <link rel="stylesheet" href="css/watch-list.css">
 </head>
 <?php
 // Assuming $con is your database connection
@@ -37,8 +38,8 @@ if (isset($_SESSION['username'])) {
 <body>
     <header class="header">
         <div class="logoContent">
-            <a href="#" class="logo"><img src="" alt=""></a>
-            <h1 class="logoName">Watch Shop </h1>
+            <a href="#" class="logo"><img src="images/logoo.png " height= 50px width=80px alt=""></a>
+            <h1 class="logoName"> </h1>
         
         </div>
 

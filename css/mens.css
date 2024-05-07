@@ -8,7 +8,8 @@ body{
   margin-top: 40px;
   row-gap: 15px;
   margin-bottom: 10px;
-  background-color:#edede9;
+ 
+  height: 370px;
 }
 .mens-name {
   font-weight: bold;
@@ -58,6 +59,7 @@ body{
   margin-left: 13px;
   margin-top: 3px;
   margin-bottom: 3px;
+
 }
 .mens-description button {
   margin-bottom: 8px;
