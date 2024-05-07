@@ -22,6 +22,10 @@ body{
   margin-left: 10px;
   height: 250px;
 }
+.mens-picture img:hover {
+  filter: brightness(85%);
+}
+
 .mens-info {
   box-shadow: 1px 1px 4px gray;
   width: 200px;
