@@ -92,4 +92,7 @@
     border-radius : .3rem;
     cursor : pointer;
     }
+    .cart-button button:hover {
+        background-color: #ee964b;
+    }
     
