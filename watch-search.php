@@ -112,4 +112,3 @@ if (isset($_SESSION['username'])) {
 
 
 </div>
-<?php include('partials-font/footer.php'); ?>

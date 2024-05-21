@@ -136,8 +136,8 @@ li a {
   margin-right: 15px;
 }
 .error {
-  background-color: red;
+  color: red;
 }
 .success {
-  background-color: green;
+  color: green;
 }

@@ -29,6 +29,7 @@ body{
 .mens-info {
   box-shadow: 1px 1px 4px gray;
   width: 200px;
+  
 }
 .mens-price {
   font-size: 18px;
@@ -89,6 +90,15 @@ body{
   color: red;
   padding: 3px;
   border-radius: 3px;
+}
+.category-seemore{
+  background-color: black;
+}
+.category-seemore:hover{
+  background-color:  gray;
+}
+.product-detail:hover{
+  background-color:#adb5bd;
 }
 
 

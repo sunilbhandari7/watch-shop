@@ -26,10 +26,12 @@
     height: 15rem;
     width: 15rem;
     border-radius: 1rem;
+    
 }
 .checkout-form{
     width: 50%;
     font-size: 1.3rem;
+    
 }
 .checkout-form input{
     width: 70%;

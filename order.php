@@ -85,13 +85,13 @@ if (isset($_SESSION['username'])) {
             ?>
             <legend>Delivery Details</legend>
             <div class="order-label">Full Name</div>
-            <input type="text" name="full-name" value="<?php echo $name; ?>" placeholder="E.g. Bishal Dhakal" class="input-responsive" required />
+            <input type="text" name="full-name" value="<?php echo $name; ?>" placeholder="E.g. Sunil Bhandari" class="input-responsive" required />
 
             <div class="order-label">Phone Number</div>
-            <input type="tel" name="contact" value="<?php echo $phone; ?>" placeholder="E.g. 9843xxxxxx" class="input-responsive" required />
+            <input type="tel" name="contact" value="<?php echo $phone; ?>" placeholder="E.g. 9841xxxxxx" class="input-responsive" required />
 
             <div class="order-label">Email</div>
-            <input type="email" name="email" value="<?php echo $email; ?>" placeholder="E.g. bishal@gmail.com" class="input-responsive" required />
+            <input type="email" name="email" value="<?php echo $email; ?>" placeholder="E.g. sunilbhandari@gmail.com" class="input-responsive" required />
 
             <div class="order-label">Address</div>
             <textarea name="address" rows="5" placeholder="E.g. Street, City, Country" class="input-responsive" required><?php echo $address; ?></textarea>
@@ -108,7 +108,8 @@ if (isset($_SESSION['username'])) {
         $price = $_POST['price'];
         $qty = $_POST['qty'];
         $total = $price * $qty; //
-        $order_date = date("Y-m-d h:i:s");
+        $order_date = date("Y-m-d h:i:s"); // Current server time
+        $nepali_date = gmdate("Y-m-d h:i:s", strtotime("+5 hours 45 minutes", strtotime($order_date))); // Adding 5 hours and 45 minutes to the server time to get Nepali time
         $status = "Ordered"; //
         $customer_name = $_POST['full-name'];
         $customer_contact = $_POST['contact'];
@@ -120,7 +121,7 @@ if (isset($_SESSION['username'])) {
         price=$price,
         qty=$qty,
         total=$total,
-        order_date='$order_date',
+        order_date='$nepali_date',
         status='$status',
         customer_name='$customer_name',
         customer_contact='$customer_contact',
@@ -131,7 +132,7 @@ if (isset($_SESSION['username'])) {
         ";
         $res2 = mysqli_query($con, $sql2);
         if ($res2) {
-            $_SESSION['order'] = "<div class='success text-center' style='text-align:center;color:green;'>Watch order Success.</div>";
+            $_SESSION['order'] = "<div class='success text-center' style='text-align:center;color:green ;'>Watch Order Successfully It will be deliver after 7 working days.</div>";
             header("location:" . SITEURL."/customer/orders.php");
         } else {
             $_SESSION['order'] = "<div class='error' style='text-align:center;color:red;'>Failed to order Watch. " . mysqli_error($con) . "</div>";

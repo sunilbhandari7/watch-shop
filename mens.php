@@ -22,7 +22,7 @@
     <!-- header section start here  -->
     <header class="header">
         <div class="logoContent">
-            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+            <a href="index.php" class="logo"><img src="images/logo.png" alt=""></a>
             <h1 class="logoName">Watch Shop </h1>
           
          
