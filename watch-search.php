@@ -61,7 +61,7 @@ if (isset($_SESSION['username'])) {
     <?php
 
 
-    ////sql query to get food based on search
+   
 
     $sql = "SELECT * FROM tbl_watch WHERE title LIKE '%$search%' OR description LIKE '%$search%'";
 
