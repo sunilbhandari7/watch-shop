@@ -31,7 +31,6 @@ if (isset($_SESSION['username'])) {
     <h1>Shopping Cart</h1>
     <table class="cart-title">
       <th>Product Details</th>
-      <th></th>
       <th>Quantity</th>
       <th>Price</th>
       <th>Total</th>
@@ -91,7 +90,7 @@ if (isset($_SESSION['username'])) {
     <p>Subtotal:<?php echo $sub_total; ?></p>
     <p>Discount:Rs0</p>
     <p>Shipping:<?php echo $shipping_cost; ?></p>
-    <hr />
+    <hr/>
     <h2>Total:Rs.<?php echo $total; ?></h2>
   </div>
   <!-- End order -->

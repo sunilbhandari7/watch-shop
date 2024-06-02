@@ -87,6 +87,7 @@ html{
    height: 27px;
     vertical-align: top;
     margin-left: -40px;
+    
    
     margin-top: 2px;
     
@@ -142,6 +143,11 @@ html{
     margin-bottom: 3rem;
     color: var(--black);
     
+}
+.heading h2{
+    font-size: 80px;
+    color:darkorange;
+    font-style: italic;
 }
 .sologon{
     padding-top: 100px;

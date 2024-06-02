@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/unisex.css">
     <link rel="stylesheet" href="css/watch-detail.css">
     <link rel="stylesheet" href="css/watch-list.css">
+    <link rel="stylesheet" href="css/checkout.css">
 </head>
 <?php
 // Assuming $con is your database connection

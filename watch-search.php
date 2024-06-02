@@ -106,7 +106,7 @@ if (isset($_SESSION['username'])) {
 
         }
     } else {
-        echo "<div class='error'>Watch not found</div>";
+        echo "<div class='error'> Sorry this is Watch not found</div>";
     }
     ?>
 

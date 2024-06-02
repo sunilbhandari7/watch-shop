@@ -17,7 +17,7 @@
     <div class="main">
         <div class="wrapper">
             <form action="" method="post">
-                <h1>Login</h1>
+                <h1>Log In</h1>
                 <br>
                 <?php
                 if (isset($_SESSION['login'])) {
@@ -45,9 +45,9 @@
                     <i class="bx bxs-lock-alt"></i>
                 </div>
 
-                <input type="submit" name="submit" value="LogIn" class="btn">
+                <input type="submit" name="submit" value="Log In" class="btn">
                 <div class="signup-link">
-                    <p>If you have't an account? <a href="<?php echo SITEURL; ?>user-signup.php">SignIn</a></p>
+                    <p>If you have't an account? <a href="<?php echo SITEURL; ?>user-signup.php">Sign Up</a></p>
                 </div>
         </div>
 

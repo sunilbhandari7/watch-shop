@@ -41,7 +41,7 @@
                     <i class='bx bxs-contact'></i>
                 </div>
                 <div class="input-box">
-                    <input type="text" name="address" placeholder="Your address" />
+                    <input type="text" name="address" placeholder="Your Address" />
                     <i class='bx bxs-location-plus'></i>
                 </div>
                 <label style="color:brown" for="">
@@ -51,13 +51,13 @@
                     <i class="bx bxs-lock-alt"></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" name="cpassword" placeholder="ConfirmPassword" />
+                    <input type="password" name="cpassword" placeholder="Confirm Password" />
                     <i class="bx bxs-lock-alt"></i>
                 </div>
 
-                <button type="submit" name="submit" class="btn">Signup</button>
+                <button type="submit" name="submit" class="btn">Sign Up</button>
                 <div class="signup-link">
-                    <p>Do you have an account? <a href="<?php echo SITEURL; ?>user-login.php">Login</a></p>
+                    <p>Do you have an account? <a href="<?php echo SITEURL; ?>user-login.php">Log In</a></p>
                 </div>
         </div>
         </form>

@@ -23,7 +23,9 @@
                 <th> Contact</th>
                 <th>Email</th>
                 <th>Address</th>
+                <th>Esewa</th>
                 <th>Actions</th>
+                
             </tr>
             <?php
             $sql = "SELECT * FROM tbl_buy ORDER BY id DESC";
@@ -43,6 +45,7 @@
                     $customer_contact = $row['customer_contact'];
                     $customer_email = $row['customer_email'];
                     $customer_address = $row['customer_address'];
+                    $esewa=$row['esewa'];
             ?>
                     <tr class="font-size">
                         <td><?php echo $sn++; ?></td>
@@ -69,6 +72,7 @@
                         <td><?php echo $customer_contact; ?></td>
                         <td><?php echo $customer_email; ?></td>
                         <td><?php echo $customer_address; ?></td>
+                        <td><?php echo $esewa ? "True" : "False"; ?></td>
                         <td>
                             <a class="btn-secondary" href="<?php echo SITEURL; ?>admin/update-order.php?id=<?php echo $id; ?>"> Update Order</a>
                         </td>

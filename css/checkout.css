@@ -1,11 +1,7 @@
-.checkout-cart{
-    
-    
-}
 .checkout-title{
     text-align: center;
-    padding: 8rem;
-    background-color:#fefae0;
+    padding: 10rem;
+    background-color: #faedcd;
     margin-bottom: .5rem;
     font-size: 2.5rem;
 }
@@ -15,44 +11,67 @@
     justify-content: space-between;
     margin-left: 10%;
     font-size: 1.4rem;
+    padding: 2rem;
+}
+.checkout-cart h2{
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 70px;
+    
+   
+    
 }
 .checkout-tbl tr td{
     vertical-align: top;
     padding: .5rem;
     font-size: 1.3rem;
+    
+   
 
 }
 .checkout-img{
     height: 15rem;
     width: 15rem;
     border-radius: 1rem;
-    
 }
 .checkout-form{
-    width: 50%;
+    width: 30%;
+ 
     font-size: 1.3rem;
-    
+}
+.checkout-form label{
+    margin-right: 2rem;
 }
 .checkout-form input{
-    width: 70%;
+    width: 100%;
     border: .1rem solid lightgray;
     border-radius: .5rem;
     padding: .8rem;
     
 }
+
 .checkout-total{
     display: flex;
     justify-content: space-between;
     margin-bottom: 3rem;
-    font-size: 1.4rem;
+    font-size: x-large;
+
+    
 }
 .checkout-btn{
 border: none;
-margin-left: 7rem;
 color: white;
-margin-left: 20px;
- background-color: rgb(1, 177, 246);
+background-color: rgb(1, 177, 246);
 }
+
 .checkout-btn:hover{
     background-color: rgb(0, 91, 247);
+    cursor: pointer;
+}
+.epay{
+
+    background: #60BB46;
+}
+.epay:hover{
+    background-color: green;
 }

@@ -41,7 +41,7 @@ if (isset($_SESSION['username'])) {
 <body>
     <header class="header">
     <div class="logoContent">
-            <a href="#" class="logo"><img src="../images/logoo.png " height= 50px width=80px alt=""></a>
+            <a href="../index.php" class="logo"><img src="../images/logoo.png " height= 50px width=80px alt=""></a>
             <h1 class="logoName"> </h1>
         
         </div>

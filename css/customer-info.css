@@ -15,10 +15,11 @@
     display: flex;
     width: 70%;
     margin-top: 30px;
-    margin-left: 150px;
+    margin-left: 50px;
     margin-bottom: 50px;
     justify-content: space-between;
-
+    font-size: larger;
+    
   }
 
   .user-nav {
@@ -46,7 +47,7 @@
 
   .user-link:hover {
    
-    color: #f79256;
+    color: orange;
 
   }
 

@@ -31,9 +31,9 @@
                     <i class="bx bxs-lock-alt"></i>
                 </div>
 
-                <button type="submit" name="submit" class="btn">Signup</button>
+                <button type="submit" name="submit" class="btn">Sign Up</button>
                 <div class="signup-link">
-                    <p>Do you have an account? <a href="studentlogin.php">Login</a></p>
+                    <p>Do you have an account? <a href="studentlogin.php">Log In</a></p>
                 </div>
         </div>
         </form>

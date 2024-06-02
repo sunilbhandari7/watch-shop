@@ -31,9 +31,11 @@
   color: red;
   text-align: center;
   font-size: xx-large;
+  
 }
 .explore-div:hover{
 background-color: aqua;
+
 }
 .sologon h2{
   text-align: center;

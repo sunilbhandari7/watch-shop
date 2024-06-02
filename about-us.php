@@ -1,24 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="about-us.css">
-</head>
-<body>
-    <header>
-        <h1>About Us</h1>
-    </header>
-    <section class="about">
-        <div class="container">
-            <h2>Our Story</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum tortor non nulla rutrum, eu rhoncus libero tristique. Morbi sit amet urna a magna convallis placerat et ut eros.</p>
-            <p>Integer vitae ex ac metus consectetur convallis. Sed nec turpis at enim consequat fermentum. Proin vel est ac ligula feugiat mattis. Vivamus dignissim, ex nec pulvinar varius, sem risus volutpat quam, ut vestibulum lacus nulla quis urna.</p>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+<?php include('config/constants.php'); ?>
+<?php include ('partials-font/menu.php')?>
+<link rel="stylesheet" href="css/about-us.css">
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Some text about who we are and what we do.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/abcd.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>jane@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+    <img src="images/abcd.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>mike@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+    <img src="images/abcd.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>john@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div> 
+<?php include('partials-font/footer.php') ?>

@@ -14,12 +14,20 @@
     
    
   }
+  .wrapper{
+    padding-top: 25px;
+    +
+  }
+  
+  
   .wrapper h1{
     margin-left: -10%;
+   
    
   }
   .menu{
     background-color:#219ebc;
+    height: 80px;
   
   
   }
@@ -39,8 +47,14 @@
   }
   .menu ul li {
     display: inline;
-    padding: 1%;
+    padding: 3%;
+    font-size: x-large;
+    
+    
+    
+   
   }
+
   .menu ul li a {
     font-weight: bold;
     color:white;
@@ -51,7 +65,8 @@
    color:black;
    background-color: aqua;
    padding: 10px;
-   border-radius: 50%;
+ 
+   border-radius: 70px;
   }
   /* Css for main contrent */
   .main-content {
@@ -81,8 +96,8 @@
   }
   .tbl-full tr th {
   padding: 1%;
-    text-align: left;
-    font-size: 15px;
+  text-align: left;
+  font-size: 15px;
    
     
   }
@@ -93,8 +108,10 @@
     font-size: 14px;
     height: 30px;
     
-   
   }
+    
+   
+ 
   .tbl-30 {
     width: 30%;
   }
