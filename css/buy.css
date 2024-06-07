@@ -1,10 +1,11 @@
 body{
-  padding-top: 100px;
-  background-color: #f8f9fa;
+  padding-top: 90px;
+  background-color: white;
+  
 }
 
   .sunil1{
-    border: 1px solid black;
+    border: 3px solid black;
 
   }
   
@@ -15,6 +16,10 @@ body{
     padding: 3%;
     font-size: larger;
   
+  }
+  .selected-watch-des{
+    font-size: 20px;
+    
   }
   .selected-watch-img {
     width:25%;
@@ -43,6 +48,7 @@ body{
     border: none;
     border-radius: 5px;
     font-size: 1rem;
+    border: 1px solid black;
   }
   .order-label {
     margin-bottom: 1%;
@@ -50,6 +56,7 @@ body{
     
     
   }
+  
   .btn {
     padding: 1%;
     border: none;
@@ -57,11 +64,16 @@ body{
     border-radius: 5px;
   }
   .btn-primary {
-    background-color:#fb5607 ;
+    background-color: #fb5607;
     color: white;
     cursor: pointer;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 29px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    border-radius: 100px;
   }
   .btn-primary:hover{
     background-color:  #e76f51;

@@ -82,7 +82,8 @@ if (isset($_GET['category_id'])) {
                 <div class="mens-description">
                     <p class="mens-name"><?php echo $title; ?></p>
                     <p class="mens-price">Rs.<?php echo $price; ?></p>
-                    <a href="order.php?cart_id=<?php echo $SITEURL; ?>&category_id=<?php echo $id; ?>" class="buy js-buy" onclick="a()">Buy</a>
+                    <a href="<?php echo SITEURL; ?>order.php?watch_id=<?php echo $id; ?>" class="buy js-buy">Buy</a>
+                    
                     <a href="category-watch.php?cart_id=<?php echo $id; ?>&category_id=<?php echo $category_id; ?>" class="add-to-cart js-add-to-cart" onclick="a()">Add to Cart</a>
                 </div>
             </div>

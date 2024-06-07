@@ -17,7 +17,7 @@
     <div class="main">
         <div class="wrapper">
             <form action="" method="post">
-                <h1>Log In</h1>
+                <h1>User LogIn</h1>
                 <br>
                 <?php
                 if (isset($_SESSION['login'])) {

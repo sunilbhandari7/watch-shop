@@ -10,11 +10,10 @@
    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mens.css">
-    <link rel="stylesheet" href="css/ladies.css">
-    <link rel="stylesheet" href="css/unisex.css">
     <link rel="stylesheet" href="css/watch-detail.css">
     <link rel="stylesheet" href="css/watch-list.css">
     <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/buy.css">
 </head>
 <?php
 // Assuming $con is your database connection

@@ -29,6 +29,7 @@ body{
 .mens-info {
   box-shadow: 1px 1px 4px gray;
   width: 200px;
+  height: 370px;
   
 }
 .mens-price {
@@ -41,24 +42,25 @@ body{
   padding: 5px 8px;
   border-radius: 3px;
   margin-left: 13px;
-  background-color: rgb(42, 187, 232);
+  background-color: darkcyan;
   cursor: pointer;
   color: white;
 }
 .buy:hover {
-  background-color:#48cae4;
+  background-color: #83c5be;
+  
 }
 .add-to-cart {
   border: none;
   padding: 5px 8px;
   border-radius: 3px;
   margin-left: 5px;
-  background-color: #f77f00;
+  background-color:#dda15e;
   cursor: pointer;
   color: white;
 }
 .add-to-cart:hover {
-  background-color: #fcbf49;
+  background-color: #d5bdaf;
 }
 .mens-description p {
   margin-left: 13px;

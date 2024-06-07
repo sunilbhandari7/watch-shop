@@ -45,7 +45,7 @@ if (isset($_SESSION['id'])) {
                         <th>
                             Product Details
                         </th>
-                        <th></th>
+                        
                         <th> Quantity</th>
                         <th>Price</th>
                         <th>Total</th>

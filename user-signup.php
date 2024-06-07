@@ -109,7 +109,7 @@ if (isset($_POST['submit'])) {
 
     if ($res) {
         $_SESSION['add'] = "<div class='success'>Create Account successfully.</div>";
-        header('Location:' . SITEURL . 'login.php');
+        header('Location:' . SITEURL . 'user-login.php');
     } else {
         $_SESSION['add'] = "<div class='error'>Failed to create account.</div>";
         header('Location:' . SITEURL . 'user-signup.php');

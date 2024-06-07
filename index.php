@@ -54,12 +54,17 @@ if (isset($_SESSION['username'])) {
         </div>
     </section>
         <div class="heading">
-            <h2>Shop By Category</h2>
+         
+            <h1>Shop By Category</h1>
+            
+            
+        
+            
            
         </div>
         <div class="product-main">
         <?php
-  $sql = "SELECT * FROM tbl_product WHERE active='Yes' AND featured='Yes'  LIMIT 3";
+  $sql = "SELECT * FROM tbl_product WHERE active='Yes' AND featured='Yes'  LIMIT 4";
   $res = mysqli_query($con, $sql);
   $count = mysqli_num_rows($res);
   if ($count > 0) {

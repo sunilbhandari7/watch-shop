@@ -27,7 +27,7 @@
                     <i class="bx bxs-lock-alt"></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" name="cpassword" placeholder="ConfirmPassword" />
+                    <input type="password" name="cpassword" placeholder="Confirm Password" />
                     <i class="bx bxs-lock-alt"></i>
                 </div>
 

@@ -17,17 +17,22 @@ body {
     margin-bottom: 16px;
     padding: 0 8px;
   }
-  
+    
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
+
+  }
+  .card:hover{
+    background-color: #83c5be;
   }
   
   .about-section {
     padding: 50px;
     text-align: center;
-    background-color: #474e5d;
-    color: white;
+    background-color:#d4a373;
+    color: black;
+    font-size: large;
   }
   
   .container {

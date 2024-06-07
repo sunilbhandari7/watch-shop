@@ -17,12 +17,14 @@
 }
 
 
+
 html{
     font-size: 62.5%;   
     overflow-x: hidden;
-    scroll-padding-top: 7rem;
+    scroll-padding-top: 5rem;
     scroll-behavior: smooth;
 }
+
 
 .header{
     top: 0;right: 0;left: 0;
@@ -113,6 +115,7 @@ html{
     margin-top: 25px;
     background-size: cover;
     background-position: center center;
+   
     
     
 }
@@ -121,6 +124,7 @@ html{
     float: left;
     text-align: center;
     padding: 4rem;
+    
 }
 .home .homeContent h2{
     font-size: 7rem;
@@ -129,6 +133,7 @@ html{
     line-height: 7rem;
     color: var(--black);
     text-shadow: var(--box-shadow);
+    
 }
 .home .homeContent p{
     font-size: 1.8rem;
@@ -204,14 +209,14 @@ margin-top: 50px;
 
 .footer {
     background-color:#90e0ef;
-    margin-top: 10rem;
+    margin-top: 35rem;
    
     
     
 }
 .footer .credit{
     font-size: 2rem;
-    margin-top: 1rem;
+    margin-top: 400px;
     padding-bottom: 2rem;
     color: var(--black);
     text-align: center;

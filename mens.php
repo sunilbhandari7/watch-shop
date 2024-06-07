@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
-    
     <link rel="stylesheet" href="mens.css">
 
 </head>
@@ -101,8 +99,7 @@
         <button class="add-to-cart">add to cart</button>
       </div>
     </div>
-    
-    
+
     </div>
      </div> 
 
@@ -113,7 +110,7 @@
   </section>
   <section class="footer">
     <div class="container text-center">
-      <p>All rights reserved. Designed By <a href="#">Sunil Bhandari</a></p>
+      <p>All rights reserved. Designed By <a href="">Sunil Bhandari</a></p>
     </div>
 </body>
 

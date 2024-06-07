@@ -9,6 +9,7 @@
     grid-template-columns: 500px 1fr;
     margin-top: 50px;
     font-size: large;
+    text-transform: lowercase;
     
     
   }
@@ -30,18 +31,18 @@
     color: black;
   }
     
-  
-  
   .detail-desc {
     text-align: justify;
     margin-bottom: 1%;
     font-size: 13px;
-    
     width: 300px;
+   
    
 
   }
-  
+  .detail-description{
+    text-transform: none;
+  }
   .detail-price {
     font-size: large;
     color: rgb(111, 107, 107);
@@ -75,7 +76,7 @@
     font-size: 20px;
   }
   .addtocart-option {
-    background-color: burlywood;
+    background-color: #d4a373;
     color: white;
     border: none;
     padding: 5px 100px;
